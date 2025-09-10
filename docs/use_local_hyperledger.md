@@ -9,7 +9,7 @@ These instructions have been tested on Ubuntu 14 and OSX.  It may work for Windo
 * [GoLang](https://golang.org/) - 1.7.0 or higher
 * [Docker CE](https://www.docker.com/get-docker) - v1.13 or higher
 * [Docker Compose](https://docs.docker.com/compose/install/) - v1.8 or higher
-* [Node.js](https://nodejs.org/en/download/) - node v6.2+ or v8.1+ **(v9 and v10 are not supported)**
+* [Node.js](https://nodejs.org/en/download/) - node v14+ LTS or higher (modern versions now supported)
 * [xcode](https://developer.apple.com/xcode/) - only required for **OS X** users
 
 ## 1. Download Fabric Samples

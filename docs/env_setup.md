@@ -49,9 +49,9 @@ Next verify you can build GoLang code with Go's [hello world](https://golang.org
 
 ## 3. Node.js
 
-Download and install Node.js v6, or v8.
-These are the only supported/compatible versions.
-As of 8/28/2018 **Marbles has dependencies that will not work with node.js v9 or v10**.
+Download and install Node.js v14 or later LTS version.
+Modern versions (v14+) are now supported with updated dependencies.
+Legacy versions (v6-v13) are no longer supported due to security and compatibility issues.
 
 
 - [Node.js Download Page](https://nodejs.org/en/download/)
