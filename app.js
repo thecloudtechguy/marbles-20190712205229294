@@ -27,10 +27,15 @@ var winston = require('winston');								// logger module
 // ------------- Init our libraries ------------- //
 var wss = {};
 var marbles_lib = null;
-var logger = new (winston.Logger)({
+var logger = winston.createLogger({
 	level: 'debug',
 	transports: [
-		new (winston.transports.Console)({ colorize: true, stderrLevels: ['error'] }),
+		new winston.transports.Console({ 
+			format: winston.format.combine(
+				winston.format.colorize(),
+				winston.format.simple()
+			)
+		}),
 	]
 });
 var misc = require('./utils/misc.js')(logger);												// mis.js has generic (non-blockchain) related functions

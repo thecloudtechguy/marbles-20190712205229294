@@ -1,9 +1,14 @@
 var winston = require('winston');								//logger module
 var path = require('path');
-var logger = new (winston.Logger)({
+var logger = winston.createLogger({
 	level: 'debug',
 	transports: [
-		new (winston.transports.Console)({ colorize: true }),
+		new winston.transports.Console({ 
+			format: winston.format.combine(
+				winston.format.colorize(),
+				winston.format.simple()
+			)
+		}),
 	]
 });
 
